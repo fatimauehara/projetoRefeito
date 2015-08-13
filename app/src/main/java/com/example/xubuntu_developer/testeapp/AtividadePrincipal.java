@@ -4,14 +4,40 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class AtividadePrincipal extends ActionBarActivity {
+    private ListAdapter mAdaptador;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atividade_principal);
+
+        String [] dados= {
+                "Grupo",
+                "Famíla",
+                "Amigos",
+                "Colegas "
+
+        };
+        List<String> grupos = new ArrayList<>(Arrays.asList(dados));
+
+        //CRIAR O ADAPTADOR
+        mAdaptador= new ArrayAdapter<>(
+                getApplicationContext(), //contexto atual
+                R.layout.item_lista_principal, //nome do ID do layout
+                R.id.item_texto, //ID do TextView a ser prenchido
+                grupos);
+
+
     }
 
     @Override
