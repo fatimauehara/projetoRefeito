@@ -4,14 +4,32 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListAdapter;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class AtividadePrincipal extends ActionBarActivity {
+    private ListAdapter mAdaptador;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atividade_principal);
+
+        String [] dados= {
+                "Grupo",
+                "Famíla",
+                "Amigos",
+                "Colegas "
+
+        };
+        List<String> signos = new ArrayList<>(Arrays.asList(dados));
+
+
     }
 
     @Override
