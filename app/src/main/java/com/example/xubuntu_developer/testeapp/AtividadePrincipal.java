@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,7 +38,8 @@ public class AtividadePrincipal extends ActionBarActivity {
                 R.id.item_texto, //ID do TextView a ser prenchido
                 grupos);
 
-
+        ListView listView = (ListView) findViewById(R.id.lista_principal);
+                listView.setAdapter(mAdaptador);
     }
 
     @Override
