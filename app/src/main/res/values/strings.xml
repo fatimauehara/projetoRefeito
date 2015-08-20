@@ -4,4 +4,6 @@
     <string name="hello_world">Hello Angela e Fátima</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_atividade_detalhes">AtividadeDetalhes</string>
+    <string name="Botao">New Button</string>
+    <string name="Buscar">Buscar</string>
 </resources>
