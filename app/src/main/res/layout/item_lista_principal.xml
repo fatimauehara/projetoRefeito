@@ -4,5 +4,6 @@
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     android:minHeight= "?android:attr/listPreferredItemHeight"
-    android:id="@+id/item_texto">
+    android:id="@+id/item_texto"
+    android:textColor="#ff1f8cff">
 </TextView>
